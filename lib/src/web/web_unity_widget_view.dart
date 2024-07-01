@@ -38,7 +38,7 @@ class _WebUnityWidgetViewState extends State<WebUnityWidgetView> {
   }
 
   static String _getBasePath() {
-    var prefix = Uri.base.origin + Uri.base.path;
+    var prefix = Uri.base.origin; // + Uri.base.path;
     if (prefix.endsWith("/")) prefix = prefix.substring(0, prefix.length - 1);
     return prefix;
   }
